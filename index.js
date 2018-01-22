@@ -135,6 +135,14 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
+  
+  if (LEFT_ARROW == e.which) {
+    moveDodgerLeft()
+  }
+  
+  if (RIGHT_ARROW == e.which) {
+    moveDodgerRight()
+  }
   /**
    * This function should call `moveDodgerLeft()`
    * if the left arrow is pressed and `moveDodgerRight()`
